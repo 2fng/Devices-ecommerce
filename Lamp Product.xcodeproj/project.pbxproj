@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		DF46D47E26CA285E00284A49 /* NavbarButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF46D47D26CA285E00284A49 /* NavbarButton.swift */; };
-		DF46D48026CA4F6800284A49 /* deviceButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF46D47F26CA4F6800284A49 /* deviceButton.swift */; };
+		DF46D48026CA4F6800284A49 /* DeviceButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF46D47F26CA4F6800284A49 /* DeviceButton.swift */; };
 		DF9BCEBC26CA12800079289F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF9BCEBB26CA12800079289F /* AppDelegate.swift */; };
 		DF9BCEBE26CA12800079289F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF9BCEBD26CA12800079289F /* SceneDelegate.swift */; };
 		DF9BCEC026CA12800079289F /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF9BCEBF26CA12800079289F /* HomeViewController.swift */; };
@@ -19,7 +19,7 @@
 
 /* Begin PBXFileReference section */
 		DF46D47D26CA285E00284A49 /* NavbarButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavbarButton.swift; sourceTree = "<group>"; };
-		DF46D47F26CA4F6800284A49 /* deviceButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = deviceButton.swift; sourceTree = "<group>"; };
+		DF46D47F26CA4F6800284A49 /* DeviceButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceButton.swift; sourceTree = "<group>"; };
 		DF9BCEB826CA12800079289F /* Lamp Product.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Lamp Product.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DF9BCEBB26CA12800079289F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DF9BCEBD26CA12800079289F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -60,7 +60,7 @@
 			isa = PBXGroup;
 			children = (
 				DF46D47D26CA285E00284A49 /* NavbarButton.swift */,
-				DF46D47F26CA4F6800284A49 /* deviceButton.swift */,
+				DF46D47F26CA4F6800284A49 /* DeviceButton.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -177,7 +177,7 @@
 			files = (
 				DF9BCEC026CA12800079289F /* HomeViewController.swift in Sources */,
 				DF9BCEBC26CA12800079289F /* AppDelegate.swift in Sources */,
-				DF46D48026CA4F6800284A49 /* deviceButton.swift in Sources */,
+				DF46D48026CA4F6800284A49 /* DeviceButton.swift in Sources */,
 				DF9BCEBE26CA12800079289F /* SceneDelegate.swift in Sources */,
 				DF46D47E26CA285E00284A49 /* NavbarButton.swift in Sources */,
 			);
