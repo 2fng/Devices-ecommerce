@@ -25,50 +25,53 @@ class HomeViewController: UIViewController {
     @IBOutlet var iphoneDot: UILabel!
 
     @IBAction func tvClicked(_ sender: Any) {
-        if tvButton.backgroundColor == UIColor(named: "Dark gray") {
-            tvButton.backgroundColor = UIColor(named: "Light green")
+        if tvDot.textColor == UIColor.white {
+            //tvButton.backgroundColor = UIColor(named: "Light green")
+            tvButton.applyGradient(image: "tv.fill", color1: "Light green", color2: "Dark green")
             tvDot.textColor = UIColor(named: "Light green")
             
             
-            laptopButton.backgroundColor = UIColor(named: "Dark gray")
+            laptopButton.applyGradient(image: "laptopcomputer")
             laptopDot.textColor = UIColor.white
-            iphoneButton.backgroundColor = UIColor(named: "Dark gray")
+            iphoneButton.applyGradient(image: "iphone")
             iphoneDot.textColor = UIColor.white
         } else {
-            tvButton.backgroundColor = UIColor(named: "Dark gray")
+            tvButton.applyGradient(image: "tv.fill")
             tvDot.textColor = .white
         }
         
     }
     
     @IBAction func laptopClicked(_ sender: Any) {
-        if laptopButton.backgroundColor == UIColor(named: "Dark gray") {
-            laptopButton.backgroundColor = UIColor(named: "Light green")
+        if laptopDot.textColor == UIColor.white {
+            //laptopButton.backgroundColor = UIColor(named: "Light green")
             laptopDot.textColor = UIColor(named: "Light green")
+            laptopButton.applyGradient(image: "laptopcomputer", color1: "Light green", color2: "Dark green")
             
-            tvButton.backgroundColor = UIColor(named: "Dark gray")
+            tvButton.applyGradient(image: "tv.fill")
             tvDot.textColor = UIColor.white
-            iphoneButton.backgroundColor = UIColor(named: "Dark gray")
+            iphoneButton.applyGradient(image: "iphone")
             iphoneDot.textColor = UIColor.white
         } else {
-            laptopButton.backgroundColor = UIColor(named: "Dark gray")
+            laptopButton.applyGradient(image: "laptopcomputer")
             laptopDot.textColor = UIColor.white
         }
         
     }
     
     @IBAction func iphoneClicked(_ sender: Any) {
-        if iphoneButton.backgroundColor == UIColor(named: "Dark gray") {
-            iphoneButton.backgroundColor = UIColor(named: "Light green")
+        if iphoneDot.textColor == UIColor.white {
+            //iphoneButton.backgroundColor = UIColor(named: "Light green")
+            iphoneButton.applyGradient(image: "tv.fill", color1: "Light green", color2: "Dark green")
             iphoneDot.textColor = UIColor(named: "Light green")
             
             
-            laptopButton.backgroundColor = UIColor(named: "Dark gray")
+            laptopButton.applyGradient(image: "laptopcomputer")
             laptopDot.textColor = UIColor.white
-            tvButton.backgroundColor = UIColor(named: "Dark gray")
+            tvButton.applyGradient(image: "tv.fill")
             tvDot.textColor = UIColor.white
         } else {
-            iphoneButton.backgroundColor = UIColor(named: "Dark gray")
+            tvButton.applyGradient(image: "iphone")
             iphoneDot.textColor = UIColor.white
         }
         
@@ -99,9 +102,11 @@ class HomeViewController: UIViewController {
     
     private func setupDevicesButtons() {
         tvButton.deviceButton()
-        //tvButton.applyGradient(image: "tv.fill")
+        tvButton.applyGradient(image: "tv.fill")
         laptopButton.deviceButton()
+        laptopButton.applyGradient(image: "laptopcomputer")
         iphoneButton.deviceButton()
+        iphoneButton.applyGradient(image: "iphone")
     }
 
 
