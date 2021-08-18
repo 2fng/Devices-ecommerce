@@ -15,6 +15,8 @@
 		DF9BCEC326CA12800079289F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DF9BCEC126CA12800079289F /* Main.storyboard */; };
 		DF9BCEC526CA12840079289F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DF9BCEC426CA12840079289F /* Assets.xcassets */; };
 		DF9BCEC826CA12840079289F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DF9BCEC626CA12840079289F /* LaunchScreen.storyboard */; };
+		DFDFD1FA26CCEB8D0002492E /* DeviceCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFDFD1F926CCEB8D0002492E /* DeviceCollectionViewCell.swift */; };
+		DFDFD1FC26CCED1A0002492E /* Tvs.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFDFD1FB26CCED1A0002492E /* Tvs.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +30,8 @@
 		DF9BCEC426CA12840079289F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DF9BCEC726CA12840079289F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DF9BCEC926CA12840079289F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DFDFD1F926CCEB8D0002492E /* DeviceCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceCollectionViewCell.swift; sourceTree = "<group>"; };
+		DFDFD1FB26CCED1A0002492E /* Tvs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tvs.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,6 +56,7 @@
 		DF46D47A26CA178E00284A49 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				DFDFD1FB26CCED1A0002492E /* Tvs.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -61,6 +66,7 @@
 			children = (
 				DF46D47D26CA285E00284A49 /* NavbarButton.swift */,
 				DF46D47F26CA4F6800284A49 /* DeviceButton.swift */,
+				DFDFD1F926CCEB8D0002492E /* DeviceCollectionViewCell.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -175,6 +181,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DFDFD1FC26CCED1A0002492E /* Tvs.swift in Sources */,
+				DFDFD1FA26CCEB8D0002492E /* DeviceCollectionViewCell.swift in Sources */,
 				DF9BCEC026CA12800079289F /* HomeViewController.swift in Sources */,
 				DF9BCEBC26CA12800079289F /* AppDelegate.swift in Sources */,
 				DF46D48026CA4F6800284A49 /* DeviceButton.swift in Sources */,

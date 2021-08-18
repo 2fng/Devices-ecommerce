@@ -9,6 +9,8 @@ import UIKit
 
 class HomeViewController: UIViewController {
     
+    var tvArray = [Tv(name: "Old Tv", price: "10.0", image: "oldTV"), Tv(name: "Singer Tv", price: "50.0", image: "singerTV"), Tv(name: "Samsung Tv", price: "100.0", image: "samsungTV")]
+    
     //Nav buttons
     @IBOutlet var leftBarButton: UIButton!
     @IBOutlet var rightBarButton: UIButton!
@@ -23,6 +25,8 @@ class HomeViewController: UIViewController {
     
     @IBOutlet var iphoneButton: UIButton!
     @IBOutlet var iphoneDot: UILabel!
+    
+    @IBOutlet var collectionView: UICollectionView!
 
     @IBAction func tvClicked(_ sender: Any) {
         if tvDot.textColor == UIColor.white {
@@ -71,7 +75,7 @@ class HomeViewController: UIViewController {
             tvButton.applyGradient(image: "tv.fill")
             tvDot.textColor = UIColor.white
         } else {
-            tvButton.applyGradient(image: "iphone")
+            iphoneButton.applyGradient(image: "iphone")
             iphoneDot.textColor = UIColor.white
         }
         
@@ -86,8 +90,9 @@ class HomeViewController: UIViewController {
         setupNavigationBarItems()
         setupDevicesButtons()
         
-        
-        
+        collectionView.dataSource = self
+        collectionView.delegate = self
+        //collectionView.collectionViewLayout = UICollectionViewFlowLayout()
     }
     
     // MARK: Navigation bar items
@@ -112,3 +117,26 @@ class HomeViewController: UIViewController {
 
 }
 
+//Setup delegate and datasource for DevicesCollectionView
+extension HomeViewController: UICollectionViewDelegate, UICollectionViewDataSource {
+    
+    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        tvArray.count
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "DeviceCollectionViewCell", for: indexPath) as! DeviceCollectionViewCell
+        
+        cell.setup(with: tvArray[indexPath.row])
+        return cell
+    }
+    
+}
+
+//extension HomeViewController: UICollectionViewDelegateFlowLayout {
+//    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+//
+//        return CGSize(width: 350, height: 300)
+//    }
+//}
